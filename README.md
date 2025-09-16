@@ -20,7 +20,6 @@ This repository provides the BP-MSR algorithm implementation and simulations for
 - `requirements.txt` - Python dependencies.
 
 ## How to Use
-- Install the dependencies: `pip install -r requirements.txt`
 - Run `simulation.py` to run the simulation
 - Optional: Modify the network topology in the `simulation.py` script to observe different consensus behaviors
 
