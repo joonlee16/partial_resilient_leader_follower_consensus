@@ -2,13 +2,13 @@
 # Overview
 This repository provides the implementation of resilient leader-follower consensus simulations from our paper "Partial Resilient Leader-Follower Consensus in Time-Varying Graphs." 
 
-Many standard resilient consensus algorithms, particularly MSR-type algorithms, rely on global graph robustness conditions. However, these robustness conditions (i) are difficult for each agent to verify with its local information and (ii) typically require dense network structures, which can be challenging to maintain in real systems. Despite these challenges, the behavior of consensus systems when **global robustness conditions do not hold** has been largely unexplored. In our work, we introduce the concept of **partial leader-follower consensus**, where a subset of normal (non-adversarial) followers is guaranteed to track the leader’s reference state, even if the network does not satisfy full robustness conditions. 
+Many standard resilient consensus algorithms, particularly MSR-type algorithms, rely on robustness conditions of the entire network, such as strong r-robustness. However, these robustness conditions (i) are difficult for each agent to verify with its local information and (ii) typically require dense network structures, which can be challenging to maintain in real systems. Despite these challenges, the behavior of consensus systems when **robustness conditions of the entire network do not hold** has been largely unexplored. In our work, we introduce the notion of **partial leader-follower consensus**, where a subset of normal (non-adversarial) followers is guaranteed to track the leader’s reference state, even if the network does not satisfy full robustness conditions. 
 
-We propose a novel distributed algorithm, BP-MSR, that allows a subset of normal follower to achieve leader-follower consensus in arbitrary time-varying networks with a bounded number of adversaries. 
+We propose a novel distributed algorithm, BP-MSR, that allows a subset of normal follower to achieve leader-follower consensus in arbitrary sequence of time-varying networks with a bounded number of adversaries. Unlike previous work that relies on global network robustness to guarantee convergence of all followers, our approach provides sufficient conditions for convergence at the level of individual followers, allowing us to explicitly characterize which followers will converge.
 
 ## Key Contributions of Our Paper
 - **BP-MSR algorithm**: A fully distributed algorithm that combines Bootstrap Percolation (BP) and the Mean Subsequence Reduced (MSR) approach.
-- **Convergent Set Analysis**: Characterization of the subset and superset of a set of followers who are guaranteed to achieve consensus under BP-MSR algorithm.
+- **Convergent Set Analysis**: Sufficient conditions for convergence provided for each individual follower, allowing explicit identification of the convergent set.
 - **Simulation Results**: Simulations demonstrating that BP-MSR algorithm guarrantees partial consensus, even when traditional resilient consensus algorithms fail to do so.
 
 
