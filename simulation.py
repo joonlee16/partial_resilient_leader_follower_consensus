@@ -16,7 +16,7 @@ num_agents = 9
 # Simulation time 
 time = 100
 
-# Graph sequence Gcal_1, Gcal_2, Gcal_3 
+# Graph sequence Gcal_1, Gcal_2, Gcal_3 (only include normal agents)
 gcal_1 = np.array([(4, 5), (0, 6), (1, 6), (2, 6), (8, 6), (3, 7), (0, 3), (4, 7), (8, 7), (2, 5), (0, 5), (6, 5), (8, 5)])
 gcal_2 = np.array([(0, 7), (1, 7), (2, 7), (8, 4), (4,6), (8, 6), (8, 5), (3, 4), (1, 4), (8, 3)])
 gcal_3 = np.array([(0, 5), (1, 5), (2, 5), (8, 5), (8, 3), (8, 4), (1, 3), (2, 3), (3, 4), (5, 4)])
